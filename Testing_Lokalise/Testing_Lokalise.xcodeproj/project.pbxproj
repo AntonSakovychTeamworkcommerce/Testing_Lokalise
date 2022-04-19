@@ -13,7 +13,24 @@
 		CE7AF270280EE1D9007CC1BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7AF26E280EE1D9007CC1BE /* Main.storyboard */; };
 		CE7AF272280EE1DA007CC1BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7AF271280EE1DA007CC1BE /* Assets.xcassets */; };
 		CE7AF275280EE1DA007CC1BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7AF273280EE1DA007CC1BE /* LaunchScreen.storyboard */; };
+		CE7AF27E280EE3ED007CC1BE /* Lokalise.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7AF27D280EE3ED007CC1BE /* Lokalise.xcframework */; };
+		CE7AF27F280EE3ED007CC1BE /* Lokalise.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7AF27D280EE3ED007CC1BE /* Lokalise.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE7AF282280EE647007CC1BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE7AF281280EE647007CC1BE /* Localizable.strings */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE7AF280280EE3ED007CC1BE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE7AF27F280EE3ED007CC1BE /* Lokalise.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE7AF265280EE1D9007CC1BE /* Testing_Lokalise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testing_Lokalise.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,8 @@
 		CE7AF271280EE1DA007CC1BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7AF274280EE1DA007CC1BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7AF276280EE1DA007CC1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7AF27D280EE3ED007CC1BE /* Lokalise.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Lokalise.xcframework; path = ../../../Downloads/Lokalise.xcframework; sourceTree = "<group>"; };
+		CE7AF281280EE647007CC1BE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7AF27E280EE3ED007CC1BE /* Lokalise.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +62,7 @@
 			children = (
 				CE7AF267280EE1D9007CC1BE /* Testing_Lokalise */,
 				CE7AF266280EE1D9007CC1BE /* Products */,
+				CE7AF27C280EE3EC007CC1BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +77,7 @@
 		CE7AF267280EE1D9007CC1BE /* Testing_Lokalise */ = {
 			isa = PBXGroup;
 			children = (
+				CE7AF281280EE647007CC1BE /* Localizable.strings */,
 				CE7AF268280EE1D9007CC1BE /* AppDelegate.swift */,
 				CE7AF26A280EE1D9007CC1BE /* SceneDelegate.swift */,
 				CE7AF26C280EE1D9007CC1BE /* ViewController.swift */,
@@ -65,6 +87,14 @@
 				CE7AF276280EE1DA007CC1BE /* Info.plist */,
 			);
 			path = Testing_Lokalise;
+			sourceTree = "<group>";
+		};
+		CE7AF27C280EE3EC007CC1BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7AF27D280EE3ED007CC1BE /* Lokalise.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +107,7 @@
 				CE7AF261280EE1D9007CC1BE /* Sources */,
 				CE7AF262280EE1D9007CC1BE /* Frameworks */,
 				CE7AF263280EE1D9007CC1BE /* Resources */,
+				CE7AF280280EE3ED007CC1BE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7AF275280EE1DA007CC1BE /* LaunchScreen.storyboard in Resources */,
+				CE7AF282280EE647007CC1BE /* Localizable.strings in Resources */,
 				CE7AF272280EE1DA007CC1BE /* Assets.xcassets in Resources */,
 				CE7AF270280EE1D9007CC1BE /* Main.storyboard in Resources */,
 			);

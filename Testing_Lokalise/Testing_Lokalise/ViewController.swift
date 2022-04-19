@@ -11,9 +11,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(updateUserInterface),
+            name: NSNotification.Name.LokaliseDidUpdateLocalization,
+            object: nil
+        )
     }
 
-
+    @objc func updateUserInterface() {
+        // Update your interface in Swift
+    }
 }
 
