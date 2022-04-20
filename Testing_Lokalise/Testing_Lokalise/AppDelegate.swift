@@ -15,21 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        Lokalise.shared.setProjectID("Project ID", token:"SDK Token")
+        Lokalise.shared.setProjectID("26046060625eaf89b15869.75946421", token:"f3def475a5d735af8a95a8e1cfbb4b9b3370a565")
         Lokalise.shared.swizzleMainBundle()
 
-
+        
+        NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main) { _ in
+                   Lokalise.shared.checkForUpdates { (updated, errorOrNil) in
+                       print("Updated: \(updated)\nError: \(String(describing: errorOrNil))")
+                   }
+               }
 
 
         return true
     }
 
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        Lokalise.shared.checkForUpdates { (updated, errorOrNil) in
-            print("Updated: \(updated)\nError: \(errorOrNil)")
-        }
-    }
+
 
     // MARK: UISceneSession Lifecycle
 
