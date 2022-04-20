@@ -7,15 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+
+    // MARK: - IBOutlets
+    @IBOutlet private weak var lblTitle: UILabel!
+    @IBOutlet private weak var lblSubtitle: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-        let test =  NSLocalizedString("welcome_screen_title", comment: "comment")
-
-        let test1 =  NSLocalizedString("login_button", comment: "comment")
+        updateUserText()
 
         NotificationCenter.default.addObserver(
             self,
@@ -26,7 +27,12 @@ class ViewController: UIViewController {
     }
 
     @objc func updateUserInterface() {
-        // Update your interface in Swift
+        updateUserText()
+    }
+
+    func updateUserText() {
+        lblTitle.text = NSLocalizedString("title_key", comment: "comment")
+        lblSubtitle.text = NSLocalizedString("subtitle_key", comment: "comment")
     }
 }
 

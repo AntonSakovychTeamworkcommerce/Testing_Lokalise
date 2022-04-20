@@ -15,7 +15,7 @@
 		CE7AF275280EE1DA007CC1BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7AF273280EE1DA007CC1BE /* LaunchScreen.storyboard */; };
 		CE7AF27E280EE3ED007CC1BE /* Lokalise.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7AF27D280EE3ED007CC1BE /* Lokalise.xcframework */; };
 		CE7AF27F280EE3ED007CC1BE /* Lokalise.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7AF27D280EE3ED007CC1BE /* Lokalise.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEC5D91A2810288200B426F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC5D91C2810288200B426F8 /* Localizable.strings */; };
+		CEC5D9232810385D00B426F8 /* Localizabled.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC5D9252810385D00B426F8 /* Localizabled.strings */; };
 		F8DBCB15EE3EAA83C6391565 /* Pods_Testing_Lokalise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D42B33F70C89190F3C2531A /* Pods_Testing_Lokalise.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,15 +44,12 @@
 		CE7AF26F280EE1D9007CC1BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE7AF271280EE1DA007CC1BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7AF274280EE1DA007CC1BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CE7AF276280EE1DA007CC1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE7AF27D280EE3ED007CC1BE /* Lokalise.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Lokalise.xcframework; path = ../../../Downloads/Lokalise.xcframework; sourceTree = "<group>"; };
-		CEC5D912280FEDA500B426F8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		CEC5D913280FEDA500B426F8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		CEC5D915280FEDAE00B426F8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		CEC5D916280FEDAE00B426F8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		CEC5D91B2810288200B426F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CEC5D91D2810288300B426F8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CEC5D91E2810288400B426F8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CEC5D91F281037AF00B426F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		CEC5D9242810385D00B426F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizabled.strings; sourceTree = "<group>"; };
+		CEC5D9262810387600B426F8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizabled.strings; sourceTree = "<group>"; };
+		CEC5D9272810387600B426F8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = de; path = de.lproj/Info.plist; sourceTree = "<group>"; };
+		CEC5D9282810388200B426F8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizabled.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,14 +95,14 @@
 		CE7AF267280EE1D9007CC1BE /* Testing_Lokalise */ = {
 			isa = PBXGroup;
 			children = (
-				CEC5D91C2810288200B426F8 /* Localizable.strings */,
+				CEC5D9252810385D00B426F8 /* Localizabled.strings */,
 				CE7AF268280EE1D9007CC1BE /* AppDelegate.swift */,
 				CE7AF26A280EE1D9007CC1BE /* SceneDelegate.swift */,
 				CE7AF26C280EE1D9007CC1BE /* ViewController.swift */,
 				CE7AF26E280EE1D9007CC1BE /* Main.storyboard */,
 				CE7AF271280EE1DA007CC1BE /* Assets.xcassets */,
 				CE7AF273280EE1DA007CC1BE /* LaunchScreen.storyboard */,
-				CE7AF276280EE1DA007CC1BE /* Info.plist */,
+				CEC5D920281037AF00B426F8 /* Info.plist */,
 			);
 			path = Testing_Lokalise;
 			sourceTree = "<group>";
@@ -182,7 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7AF275280EE1DA007CC1BE /* LaunchScreen.storyboard in Resources */,
-				CEC5D91A2810288200B426F8 /* Localizable.strings in Resources */,
+				CEC5D9232810385D00B426F8 /* Localizabled.strings in Resources */,
 				CE7AF272280EE1DA007CC1BE /* Assets.xcassets in Resources */,
 				CE7AF270280EE1D9007CC1BE /* Main.storyboard in Resources */,
 			);
@@ -233,8 +230,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE7AF26F280EE1D9007CC1BE /* Base */,
-				CEC5D912280FEDA500B426F8 /* de */,
-				CEC5D915280FEDAE00B426F8 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -243,20 +238,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE7AF274280EE1DA007CC1BE /* Base */,
-				CEC5D913280FEDA500B426F8 /* de */,
-				CEC5D916280FEDAE00B426F8 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		CEC5D91C2810288200B426F8 /* Localizable.strings */ = {
+		CEC5D920281037AF00B426F8 /* Info.plist */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEC5D91B2810288200B426F8 /* en */,
-				CEC5D91D2810288300B426F8 /* de */,
-				CEC5D91E2810288400B426F8 /* ru */,
+				CEC5D91F281037AF00B426F8 /* Base */,
+				CEC5D9272810387600B426F8 /* de */,
 			);
-			name = Localizable.strings;
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		CEC5D9252810385D00B426F8 /* Localizabled.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC5D9242810385D00B426F8 /* en */,
+				CEC5D9262810387600B426F8 /* de */,
+				CEC5D9282810388200B426F8 /* ru */,
+			);
+			name = Localizabled.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
