@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        Lokalise.shared.setProjectID("26046060625eaf89b15869.75946421", token:"870922c9464b3b1abf0f0b607f0b5a7b412445c1")
+        Lokalise.shared.setProjectID("68898370625ff183120249.54418807", token:"f408c9fc6449390126de5e8e5236248e7f4cfa4c")
         Lokalise.shared.swizzleMainBundle()
 
 
