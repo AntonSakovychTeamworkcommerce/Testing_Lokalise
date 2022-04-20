@@ -11,6 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+
+        let test =  NSLocalizedString("welcome_screen_title", comment: "comment")
+
+        let test1 =  NSLocalizedString("login_button", comment: "comment")
+
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(updateUserInterface),
