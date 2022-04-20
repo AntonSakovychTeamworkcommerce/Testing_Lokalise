@@ -16,11 +16,11 @@
 		0FB2954AD73C57216A74ED5ECE05A981 /* Pods-Testing_Lokalise-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Testing_Lokalise-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3D59E12C5BFE1DD1B6FAE328842E5E8E /* Pods-Testing_Lokalise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Testing_Lokalise.release.xcconfig"; sourceTree = "<group>"; };
 		3F1BD7386DBAE0B525E6B35B60217CD2 /* Pods-Testing_Lokalise.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Testing_Lokalise.modulemap"; sourceTree = "<group>"; };
-		6354EF48BAF77F429248399782A712AD /* Pods-Testing_Lokalise */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Testing_Lokalise"; path = Pods_Testing_Lokalise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6354EF48BAF77F429248399782A712AD /* Pods_Testing_Lokalise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Testing_Lokalise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0999C531FBF09FCC831A5DD2DE7A6E /* Pods-Testing_Lokalise-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Testing_Lokalise-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		864BC9C599BBAA99694DCA8F593A20B4 /* Pods-Testing_Lokalise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Testing_Lokalise.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C68C4F1626EC56B1145D5FD89067BC21 /* Pods-Testing_Lokalise-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Testing_Lokalise-umbrella.h"; sourceTree = "<group>"; };
 		F4597512193F1E99C835FBFED3FC9862 /* Pods-Testing_Lokalise-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Testing_Lokalise-Info.plist"; sourceTree = "<group>"; };
 		FDA53A19F3719F544C365D9B92D48CF6 /* Pods-Testing_Lokalise-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Testing_Lokalise-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		CF025791FE748D55D28040CCB4B62F18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6354EF48BAF77F429248399782A712AD /* Pods-Testing_Lokalise */,
+				6354EF48BAF77F429248399782A712AD /* Pods_Testing_Lokalise.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			);
 			name = "Pods-Testing_Lokalise";
 			productName = Pods_Testing_Lokalise;
-			productReference = 6354EF48BAF77F429248399782A712AD /* Pods-Testing_Lokalise */;
+			productReference = 6354EF48BAF77F429248399782A712AD /* Pods_Testing_Lokalise.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +193,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Testing_Lokalise/Pods-Testing_Lokalise-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,7 +297,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Testing_Lokalise/Pods-Testing_Lokalise-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

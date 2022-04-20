@@ -15,10 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        Lokalise.shared.setProjectID("26046060625eaf89b15869.75946421", token:"f3def475a5d735af8a95a8e1cfbb4b9b3370a565")
+        Lokalise.shared.setProjectID("26046060625eaf89b15869.75946421", token:"870922c9464b3b1abf0f0b607f0b5a7b412445c1")
         Lokalise.shared.swizzleMainBundle()
 
-        
+
         NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main) { _ in
                    Lokalise.shared.checkForUpdates { (updated, errorOrNil) in
                        print("Updated: \(updated)\nError: \(String(describing: errorOrNil))")
@@ -29,7 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-
+//
+//    func applicationDidBecomeActive(_ application: UIApplication) {
+//        Lokalise.shared.checkForUpdates { (updated, errorOrNil) in
+//            print("Updated: \(updated)\nError: \(String(describing: errorOrNil))")
+//        }
+//    }
 
 
     // MARK: UISceneSession Lifecycle
