@@ -6,5 +6,5 @@
   
 */
 
-"welcome_screen_title" = "кклл";
-"login_button" = "Log in";
+"title" = "Текст заголовка";
+"subtitle" = "Текст подзаголовка";

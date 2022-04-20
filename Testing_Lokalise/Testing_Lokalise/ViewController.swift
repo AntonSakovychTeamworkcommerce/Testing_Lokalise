@@ -6,16 +6,18 @@
 //
 
 import UIKit
+import Lokalise
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+
+    // MARK: - IBOutlets
+    @IBOutlet private weak var lblTitle: UILabel!
+    @IBOutlet private weak var lblSubtitle: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-        let test =  NSLocalizedString("welcome_screen_title", comment: "comment")
-
-        let test1 =  NSLocalizedString("login_button", comment: "comment")
+        updateUserText()
 
         NotificationCenter.default.addObserver(
             self,
@@ -26,7 +28,16 @@ class ViewController: UIViewController {
     }
 
     @objc func updateUserInterface() {
-        
+        updateUserText()
+    }
+
+    func updateUserText() {
+
+        let title = NSLocalizedString("title", comment: "comment")
+        let subtitle = NSLocalizedString("subtitle", comment: "comment")
+
+        lblTitle.text = title
+        lblSubtitle.text = subtitle
     }
 }
 

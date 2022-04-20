@@ -6,5 +6,5 @@
   
 */
 
-"welcome_screen_title" = "Welcome";
-"login_button" = "Log in";
+"title" = "Title Text";
+"subtitle" = "SubTitle Text";
